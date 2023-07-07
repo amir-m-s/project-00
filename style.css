@@ -1,3 +1,23 @@
+@font-face {
+    font-family: "Vazir";
+    src: url("./webfonts/Vazir/Vazir-FD.woff") format("woff"),
+         url("./webfonts/Vazir/Vazir-FD.woff2") format("woff2"),
+         url("./webfonts/Vazir/Vazir-FD.ttf") format("truetype"),
+         url("./webfonts/Vazir/Vazir-FD.eot") format("embedded-opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Vazir";
+    src: url("./webfonts/Vazir/Vazir-Bold-FD.woff") format("woff"),
+         url("./webfonts/Vazir/Vazir-Bold-FD.woff2") format("woff2"),
+         url("./webfonts/Vazir/Vazir-Bold-FD.ttf") format("truetype"),
+         url("./webfonts/Vazir/Vazir-Bold-FD.eot") format("embedded-opentype");
+    font-weight: bold;
+    font-style: normal;
+}
+
 * , :before, :after{
     box-sizing: border-box;
 }
@@ -18,11 +38,20 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+/* Dafault font for this theme is Vazir */
 body {
 	line-height: 1;
+    direction: rtl;
+    background-color: #F1F2F2;
+    color: #333339;
+    font-family: "Vazir", Arial, Helvetica;
 }
 ol, ul {
 	list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
 }
 blockquote, q {
 	quotes: none;
@@ -37,3 +66,126 @@ table {
 	border-spacing: 0;
 }
 
+/* Container class */
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.header {
+    background: #FFF;
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,.12), 0 1px 6px 0 rgba(0,0,0,.12);
+}
+
+.header-container {
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* menu class is used in top navbar */
+.menu {
+    display: flex;
+}
+
+.menu li > a{
+    display: block;
+    padding: 1em;
+}
+
+/* Scial icons' style on top navbar */
+.social-icons ul {
+    display: flex;
+}
+
+.social-icons ul > li > a {
+    display: block;
+    padding: 0.6em;
+}
+
+/* Top navbar style */
+.top-nav {
+    background: #494D61;
+    color: #E2E2E6;
+}
+
+.face {
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+/* Webite's main navigation menu styles */
+.main-nav {
+    border-top: 1px solid #F1F3F4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-nav ul{
+    display: flex;
+}
+
+.main-nav ul > li > a {
+    display: block;
+    padding: 1.5em;
+    border: 1px solid #F1F3F4;
+    transition: 0.2s ease-in-out;
+}
+
+/* Main menu first and last child should be different from other childs */
+/* First child has no right padding and border */
+.main-nav ul > li:first-child > a {
+    padding: 1.5em 0 1.5em 1.5em;
+    border-right: none;
+}
+
+/* Last child has no left padding and border */
+.main-nav ul > li:last-child > a {
+    padding: 1.5em 1.5em 1.5em 0;
+    border-left: none;
+}
+
+.main-nav ul > li > a:hover {
+    color: dodgerblue;
+}
+
+/* Tools are contains search + light and dark mode button */
+.tools {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tools > a {
+    padding: 1em;
+    margin-left: 1em;
+    transition: 0.2s ease-in-out
+}
+
+.tools > a:hover {
+    color: dodgerblue;
+    transition: 0.2s ease-in-out;
+}
+
+.tools .search {
+    display: flex;
+    align-items: center;
+    padding-right: 1em;
+    border-right: 1px solid #F1F3F4;
+}
+
+.search a {
+    transition: 0.2s ease-in-out;
+}
+
+.search a:hover {
+    color: dodgerblue;
+    transition: 0.2s ease-in-out;
+}
+
+.search a > div {
+    color: #333339 !important;
+}
