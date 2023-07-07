@@ -189,3 +189,43 @@ table {
 .search a > div {
     color: #333339 !important;
 }
+
+.body-container {
+    display: flex;
+    width: 85%;
+    margin: 2.5em auto;
+    justify-content: space-between;
+}
+
+.posts {
+    width: 65%;
+}
+
+.post-ads {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFF;
+    border: 0.3em solid #A6D343;
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,.12), 0 1px 6px 0 rgba(0,0,0,.12);
+}
+
+.post-ads a {
+    margin: 1em;
+}
+
+.sidebar {
+    width: 33%;
+}
+
+.side-ads {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFF;
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,.12), 0 1px 6px 0 rgba(0,0,0,.12);
+}
+
+.side-ads a {
+    margin: 1em;
+}
