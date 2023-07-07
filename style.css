@@ -224,8 +224,102 @@ table {
     align-items: center;
     background: #FFF;
     box-shadow: 0 1px 6px 0 rgba(0,0,0,.12), 0 1px 6px 0 rgba(0,0,0,.12);
+    border-radius: 2px;
 }
 
 .side-ads a {
     margin: 1em;
+}
+
+.post-card {
+    display: flex;
+    flex-direction: column;
+    margin: 2em 0;
+    background: #FFF;
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,.12), 0 1px 6px 0 rgba(0,0,0,.12);
+    border-radius: 2px;
+}
+
+.post-header {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.post-header .post-title {
+    padding: 1em;
+}
+
+.post-header h2 {
+    font-size: 19px;
+    margin-bottom: 0.7em;
+}
+
+.post-header .post-category-icon {
+    margin-right: 1em;
+}
+
+.post-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-content p {
+    margin: 1em;
+    text-align: justify;
+}
+
+.post-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-info-and-readmore {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-info {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+}
+
+.post-info ul {
+    display: flex;
+}
+
+.post-info ul > li {
+    margin: 0 0.3em;
+}
+
+.post-readmore a{
+    background: #4285F4;
+    color: #F7F9FE;
+    margin: 0 1em;
+    padding: 0.5em 1.5em;
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,.12), 0 1px 6px 0 rgba(0,0,0,.12);
+    border-radius: 2px;
+}
+
+.post-footer hr {
+    width: 100%;
+    border: 1px solid #E2E2E6;
+}
+
+.post-tags {
+    display: flex;
+    padding: 1em;
+    align-items: center; 
+}
+
+.post-tags .tag-icon {
+    margin-left: 1em;
 }
