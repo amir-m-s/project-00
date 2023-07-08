@@ -384,3 +384,102 @@ table {
     background: #4285F4 !important;
     color: #F7F9FE !important;
 }
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background: #FFF;
+}
+
+.tab-menu {
+    background: #f8f8f8;
+    width: 100%;
+}
+
+.tab-menu ul {
+    display: flex;
+}
+
+.tab-menu ul > li > a{
+    display: flex;
+    padding: 1em;
+}
+
+.tab-menu ul > li {
+    border: 1px solid #E2E2E6;
+    border-left: none;
+}
+
+.tab-menu ul > li:last-child {
+    border-left: 1px solid #E2E2E6;
+}
+
+.sub-menu ul > li{
+    border: none !important;
+    background: none !important;
+}
+
+.footer-mid {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-row {
+    display: flex;
+    margin: 1em;
+    justify-content: space-between;
+}
+
+.footer-column h2 {
+    font-size: 18px;
+    padding: 1em 0;
+    color: dodgerblue;
+}
+
+.footer-column input {
+    width: 100%;
+    padding: 0.5em 0 0;
+    font-family: "Vazir";
+}
+
+.footer-column textarea {
+    width: 100%;
+    padding: 0.5em;
+    font-family: "Vazir";
+}
+
+.news {
+    width: 25%;
+}
+
+.news div {
+    padding: 0.5em 0;
+}
+
+.footer-column form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-column form > label::after {
+    content: '*';
+    color: red;
+}
+
+.send-btn {
+    margin: 1em;
+    padding: 1em 2em;
+    font-family: "Vazir";
+    background: #2863c2;
+    color: #FFF;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.send-btn:hover {
+    background: #4285F4;
+    transition: 0.2s ease-in-out;
+}
