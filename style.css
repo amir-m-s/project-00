@@ -403,6 +403,11 @@ table {
 .tab-menu ul > li > a{
     display: flex;
     padding: 1em;
+    transition: 0.2s ease-in-out;
+}
+
+.tab-menu ul > li > a:hover {
+    color: #4285F4;
 }
 
 .tab-menu ul > li {
@@ -417,6 +422,15 @@ table {
 .sub-menu ul > li{
     border: none !important;
     background: none !important;
+}
+
+.sub-menu ul > li > a {
+    transition: 0.2s ease-in-out;
+}
+
+.sub-menu ul > li > a:hover {
+    color: dodgerblue;
+    transition: 0.2s ease-in-out
 }
 
 .footer-mid {
@@ -436,9 +450,20 @@ table {
     color: dodgerblue;
 }
 
+.footer-column ul > li > a {
+    display: block;
+    padding: 0.5em;
+    transition: 0.2s ease-in-out;
+}
+
+.footer-column ul > li > a:hover {
+    color: dodgerblue;
+}
+
 .footer-column input {
     width: 100%;
     padding: 0.25em 0;
+    margin: 0.6em 0;
     font-family: "Vazir";
 }
 
