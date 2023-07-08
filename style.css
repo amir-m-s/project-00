@@ -329,3 +329,58 @@ table {
 .post-tags .tag-icon {
     margin-left: 1em;
 }
+
+.side-card {
+    display: flex;
+    flex-direction: column;
+    margin: 2em 0;
+    background: #FFF;
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,.12), 0 1px 6px 0 rgba(0,0,0,.12);
+    border-radius: 2px;
+}
+
+.side-card h2 {
+    font-size: 18px;
+    padding: 1em;
+    border-bottom: 1px solid #E2E2E6;
+}
+
+.side-card .side-menu {
+    padding: 0 1em 1em;
+}
+
+.side-menu ul > li > a {
+    display: block;
+    padding: 0.5em 0;
+}
+
+.pagination-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination-wrapper ul {
+    direction: ltr !important;
+    display: flex;
+}
+
+.pagination-wrapper ul > li {
+    background: #FFF;
+    padding: 1em;
+    border-right: 1px solid #E2E2E6;
+    border-radius: 2px;
+}
+
+.pagination-wrapper ul > li:first-child {
+    border-left: 1px solid #E2E2E6;
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,.12), 0 1px 6px 0 rgba(0,0,0,.12);
+}
+
+.pagination-wrapper ul > li > a {
+    display: block;
+}
+
+.active {
+    background: #4285F4 !important;
+    color: #F7F9FE !important;
+}
