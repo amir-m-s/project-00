@@ -300,13 +300,19 @@ table {
     margin: 0 0.3em;
 }
 
-.post-readmore a{
+.post-readmore a {
     background: #4285F4;
     color: #F7F9FE;
     margin: 0 1em;
     padding: 0.5em 1.5em;
     box-shadow: 0 1px 6px 0 rgba(0,0,0,.12), 0 1px 6px 0 rgba(0,0,0,.12);
     border-radius: 2px;
+    transition: 0.2s ease-in-out;
+}
+
+.post-readmore a:hover {
+    background: #2863c2;
+    transition: 0.2s ease-in-out;
 }
 
 .post-footer hr {
