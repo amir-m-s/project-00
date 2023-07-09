@@ -153,6 +153,10 @@ table {
     color: dodgerblue;
 }
 
+.mobile-nav {
+    display: none;
+}
+
 /* Tools are contains search + light and dark mode button */
 .tools {
     display: flex;
@@ -540,10 +544,6 @@ table {
 
 @media (max-width: 1024px) {
 
-    body {
-        background: red;;
-    }
-
     .post-info-and-readmore {
         flex-direction: column;
     }
@@ -553,7 +553,7 @@ table {
     }
 }
 
-@media (max-width: 730px) {
+@media (max-width: 850px) {
     .body-container {
         flex-direction: column;
         align-items: center;
@@ -609,5 +609,37 @@ table {
 
     .footer-column h2 {
         text-align: center;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-btn {
+        margin: 0 2em 1em;
+    }
+
+    .mobile-menu {
+        display: none;
+        flex-direction: column;
+        gap: 1em;
+        transition: 0.3s ease-in-out;
+    }
+
+    .mobile-menu li > a {
+        padding: 2em;
+    }
+
+    .mobile-menu li:last-child {
+        margin-bottom: 1em;
     }
 }
