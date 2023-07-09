@@ -552,3 +552,37 @@ table {
         margin-bottom: 1em;
     }
 }
+
+@media (max-width: 730px) {
+    .body-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .posts {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .sidebar {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .side-ads {
+        margin-top: 2em;
+    }
+
+    .side-ads a {
+        margin: 0.5em 0;
+    }
+
+    .side-card {
+        margin: 0.5em;
+    }
+    
+    .side-card h2 {
+        text-align: center;
+    }
+    
+}
