@@ -52,6 +52,7 @@ ol, ul {
 a {
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
 }
 blockquote, q {
 	quotes: none;
@@ -406,10 +407,10 @@ table {
     display: flex;
 }
 
-.tab-menu ul > li > a{
-    display: flex;
+.tab-menu .menu-item{
     padding: 1em;
     transition: 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 .tab-menu ul > li > a:hover {
@@ -426,12 +427,14 @@ table {
 }
 
 .sub-menu ul > li{
+    margin: 1em 0;
     border: none !important;
     background: none !important;
 }
 
 .sub-menu ul > li > a {
     transition: 0.2s ease-in-out;
+    padding: 1em;
 }
 
 .sub-menu ul > li > a:hover {
@@ -542,6 +545,10 @@ table {
     color: #FFF;
 }
 
+#sub-menu-2, #sub-menu-3, #sub-menu-4 {
+    display: none;
+}
+
 @media (max-width: 1024px) {
 
     .post-info-and-readmore {
@@ -640,10 +647,12 @@ table {
         flex-direction: column;
         gap: 1em;
         transition: 0.3s ease-in-out;
+        animation: ease-in-out;
     }
 
+
     .mobile-menu li > a {
-        padding: 2em;
+        padding: 0.3em 1em;
     }
 
     .mobile-menu li:last-child {
