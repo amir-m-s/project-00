@@ -535,3 +535,18 @@ table {
     background: #494D61;
     color: #FFF;
 }
+
+@media (max-width: 1024px) {
+
+    body {
+        background: red;;
+    }
+
+    .post-info-and-readmore {
+        flex-direction: column;
+    }
+
+    .post-readmore {
+        margin-bottom: 1em;
+    }
+}
