@@ -585,4 +585,29 @@ table {
         text-align: center;
     }
     
+    .site-menu {
+        display: none;
+    }
+
+    .social-icons {
+        display: none;
+    }
+
+    .tab-menu {
+        display: none;
+    }
+
+    .footer-row {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+
+    .footer-column h2 {
+        text-align: center;
+    }
 }
