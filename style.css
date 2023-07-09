@@ -628,6 +628,13 @@ table {
         margin: 0 2em 1em;
     }
 
+    .tools {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1em;
+    }
+
     .mobile-menu {
         display: none;
         flex-direction: column;
