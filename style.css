@@ -526,3 +526,12 @@ table {
     background: #E2E2E6;
     transition: 0.25s ease-in-out;
 }
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0;
+    background: #494D61;
+    color: #FFF;
+}
