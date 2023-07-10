@@ -273,3 +273,15 @@
     content: "*";
     color:hsl(4, 89%, 40%);
 }
+
+.comments-nav-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.comments-nav-btn a {
+    display: block;
+    padding: 1em;
+    background: #4285F4;
+    color: #FFF;
+}
