@@ -157,10 +157,6 @@
     font-size: 0.9em;
 }
 
-.comments-section {
-
-}
-
 .comments-section h2 {
     font-size: 1.1em;
     padding: 1em;
@@ -218,4 +214,62 @@
     border: none;
     padding: 1em;
     font-size: 1.01em;
+}
+
+.comments-list h2 {
+    font-size: 19px;
+    padding: 1em;
+}
+
+.comments-list hr {
+    width: 100%;
+    border: 1px solid #E2E2E6;
+}
+
+.comment-meta h4 {
+    padding: 1em;
+}
+
+.comment-meta .comment-date {
+    padding: 0 1em;
+}
+
+.comment-meta p {
+    padding: 1em;
+    text-align: justify;
+}
+
+.comment-meta .comment-btns {
+    display: flex;
+    gap: 1em;
+    padding: 0 1em;
+    margin-bottom: 1em;
+}
+
+.comment-meta .reply a{
+    display: block;
+    padding: 1em;
+    background: #59BE5E;
+    color: #FFF;
+}
+
+.comment-meta .report a{
+    display: block;
+    padding: 1em;
+    background: #FB6E52;
+    color: #FFF;
+}
+
+
+.your-comment::after {
+    content: "*";
+    color:hsl(4, 89%, 40%);
+}
+.name::after {
+    content: "*";
+    color:hsl(4, 89%, 40%);
+}
+.email::after {
+    content: "*";
+    color:hsl(4, 89%, 40%);
 }
