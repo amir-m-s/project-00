@@ -1,0 +1,138 @@
+.post-content-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-video {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-video video {
+    width: 90%;
+}
+
+.post-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5em;
+    margin: 2em 0;
+}
+
+.post-gallery a {
+    flex-shrink: 1;
+}
+
+.post-info-card {
+    width: 95%;
+    margin: 1em auto;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,.12), 0 1px 6px 0 rgba(0,0,0,.12);
+}
+
+.post-info-card h3 {
+    color: #FFF;
+    padding: 1em;
+}
+
+.english-info {
+    direction: ltr;
+}
+
+.english-info h3 {
+    background: #9933CC;
+}
+
+.english-info p {
+    padding: 1em;
+}
+
+.required-system h3 {
+    background: #FFB200;
+}
+
+.required-system p {
+    color: #8F4513;
+    padding: 1em;
+}
+
+.required-system div {
+    direction: ltr;
+    padding: 1em;
+    line-height: 2em;
+}
+
+.tutorial h3 {
+    background: #4285F4;
+}
+
+.tutorial h4 {
+    padding: 1em;
+}
+
+.tutorial ol{
+    padding: 1em 2em;
+    list-style: uepper-latin;
+}
+
+.tutorial ol > li {
+    padding: 0.5em 0;
+}
+
+.file-info h3 {
+    background: #FB6E52;
+}
+
+.file-info .info-block {
+    padding: 0.5em 1em;
+    border-bottom: 1px solid #E2E2E6;
+}
+
+.file-info .info-block:last-child {
+    border-bottom: none;
+}
+
+.password h3{
+    background: #598CBE;
+}
+
+.download h3 {
+    background: #59BE5E;
+}
+
+.download p {
+    margin: 1em;
+    color: #222;
+}
+
+.download p > a {
+    color: dodgerblue;
+}
+
+.download-footer {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    background: #E2E2E6;
+    padding: 1em 0;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+}
+
+.download-footer .df-btn a{
+    display: block;
+    padding: 1em;
+    background: hsl(4, 89%, 59%);
+    color: #FFF;
+    font-size: 0.85em;
+    transition: 0.2s ease-in-out;
+}
+
+.download-footer .df-btn a:hover {
+    background: hsl(4, 89%, 40%);
+    transition: 0.2s ease-in-out;
+}
