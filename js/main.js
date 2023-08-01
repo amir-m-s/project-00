@@ -9,9 +9,6 @@ const submenu_4 = document.querySelector("#sub-menu-4");
 function toggle_menu() {
     let menu_display = getComputedStyle(mobile_menu).display;
     if (menu_display == "none") {
-        mobile_menu.style.animation = "ease-in-out";
-        tools.style.animation = "ease-in-out";
-        tools.style.ani
         mobile_menu.style.display = "flex";
         tools.style.display = "flex";
     } else {
