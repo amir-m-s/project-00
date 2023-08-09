@@ -49,3 +49,9 @@ function submenu_manager(id) {
         }
     }
 }
+
+const go_top_btn = document.querySelector(".gotop");
+
+go_top_btn.addEventListener("click", () => {
+    window.scrollTo({top: 0, behavior: "smooth"});
+})

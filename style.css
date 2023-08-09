@@ -397,6 +397,7 @@ table {
     display: flex;
     flex-direction: column;
     background: #FFF;
+    position: relative;
 }
 
 .tab-menu {
@@ -548,6 +549,17 @@ table {
 
 #sub-menu-2, #sub-menu-3, #sub-menu-4 {
     display: none;
+}
+
+
+
+.gotop {
+    position: absolute;
+    color: #fff;
+    bottom: 2.5%;
+    right: 5%;
+    padding: 1rem;
+    cursor: pointer;
 }
 
 @media (max-width: 1024px) {
