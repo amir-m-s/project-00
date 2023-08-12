@@ -18,6 +18,18 @@
     font-style: normal;
 }
 
+/* Foundamental variable */
+:root {
+    --primary-color: #1e90ff;
+    --secondary-color: #494D61;
+
+    --primary-text-color: #333339;
+    --secondary-text-color: #E2E2E6;
+    
+    --white: #fff;
+    --background-color: #F1F2F2;
+}
+
 * , :before, :after{
     box-sizing: border-box;
 }
@@ -42,8 +54,8 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
     direction: rtl;
-    background-color: #F1F2F2;
-    color: #333339;
+    background-color: var(--background-color);
+    color: var(--primary-text-color);
     font-family: "Vazir", Arial, Helvetica;
 }
 ol, ul {
@@ -74,7 +86,7 @@ table {
 }
 
 .header {
-    background: #FFF;
+    background: var(--white);
     box-shadow: 0 1px 6px 0 rgba(0,0,0,.12), 0 1px 6px 0 rgba(0,0,0,.12);
 }
 
@@ -108,8 +120,8 @@ table {
 
 /* Top navbar style */
 .top-nav {
-    background: #494D61;
-    color: #E2E2E6;
+    background: var(--secondary-color);
+    color: var(--secondary-text-color);
 }
 
 .face {
@@ -120,7 +132,7 @@ table {
 }
 /* Webite's main navigation menu styles */
 .main-nav {
-    border-top: 1px solid #F1F3F4;
+    border-top: 1px solid var(--secondary-text-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -133,7 +145,7 @@ table {
 .main-nav ul > li > a {
     display: block;
     padding: 1.5em;
-    border: 1px solid #F1F3F4;
+    border: 1px solid var(--secondary-text-color);
     transition: 0.2s ease-in-out;
 }
 
@@ -151,7 +163,7 @@ table {
 }
 
 .main-nav ul > li > a:hover {
-    color: dodgerblue;
+    color: var(--primary-color);
 }
 
 .mobile-nav {
@@ -171,7 +183,7 @@ table {
 }
 
 .tools > a:hover {
-    color: dodgerblue;
+    color: var(--primary-color);
     transition: 0.2s ease-in-out;
 }
 
@@ -179,7 +191,7 @@ table {
     display: flex;
     align-items: center;
     padding-right: 1em;
-    border-right: 1px solid #F1F3F4;
+    border-right: 1px solid var(--secondary-text-color);
 }
 
 #search-modal {
@@ -187,17 +199,18 @@ table {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: #222;
+    background: var(--secondary-color);
     z-index: 1;
     top: 0;
     left: 0;
     text-align: center;
     padding: 20%;
+    opacity: 0.95;
 }
 
 #search-modal-close-btn {
     position: absolute;
-    color: #fff;
+    color: var(--white);
     cursor: pointer;
     font-size: 3rem;
     top: 5%;
@@ -205,7 +218,6 @@ table {
 }
 
 .searhbar {
-    background: red;
     z-index: 100;
     opacity: 1;
 }
@@ -218,9 +230,9 @@ table {
 }
 
 .searchbar button {
-    background: #494D61;
+    background: var(--primary-text-color);
     color: #fff;
-    border: 1px solid #494D61;
+    border: 1px solid var(--secondary-color);
     transition: all 0.3s ease-in-out;
 }
 
@@ -242,7 +254,7 @@ table {
 }
 
 .search > div:hover {
-    color: dodgerblue;
+    color: var(--primary-color);
     transition: 0.2s ease-in-out;
 }
 
@@ -364,8 +376,8 @@ table {
 }
 
 .post-readmore a {
-    background: #4285F4;
-    color: #F7F9FE;
+    background: var(--primary-color);
+    color: var(--secondary-text-color);
     margin: 0 1em;
     padding: 0.5em 1.5em;
     box-shadow: 0 1px 6px 0 rgba(0,0,0,.12), 0 1px 6px 0 rgba(0,0,0,.12);
@@ -380,7 +392,7 @@ table {
 
 .post-footer hr {
     width: 100%;
-    border: 1px solid #E2E2E6;
+    border: 1px solid var(--secondary-text-color);
 }
 
 .post-tags {
@@ -397,7 +409,7 @@ table {
     display: flex;
     flex-direction: column;
     margin: 2em 0;
-    background: #FFF;
+    background: var(--white);
     box-shadow: 0 1px 6px 0 rgba(0,0,0,.12), 0 1px 6px 0 rgba(0,0,0,.12);
     border-radius: 2px;
 }
@@ -405,7 +417,7 @@ table {
 .side-card h2 {
     font-size: 18px;
     padding: 1em;
-    border-bottom: 1px solid #E2E2E6;
+    border-bottom: 1px solid var(--secondary-text-color);
 }
 
 .side-card .side-menu {
@@ -428,14 +440,14 @@ table {
 }
 
 .pagination-wrapper ul > li {
-    background: #FFF;
+    background: var(--white);
     padding: 1em;
-    border-right: 1px solid #E2E2E6;
+    border-right: 1px solid var(--secondary-text-color);
     border-radius: 2px;
 }
 
 .pagination-wrapper ul > li:first-child {
-    border-left: 1px solid #E2E2E6;
+    border-left: 1px solid var(--secondary-text-color);
     box-shadow: 0 1px 6px 0 rgba(0,0,0,.12), 0 1px 6px 0 rgba(0,0,0,.12);
 }
 
@@ -444,14 +456,14 @@ table {
 }
 
 .active {
-    background: #4285F4 !important;
-    color: #F7F9FE !important;
+    background: var(--primary-color) !important;
+    color: var(--secondary-text-color) !important;
 }
 
 .footer {
     display: flex;
     flex-direction: column;
-    background: #FFF;
+    background: var(--white);
     position: relative;
 }
 
@@ -471,16 +483,16 @@ table {
 }
 
 .tab-menu ul > li > a:hover {
-    color: #4285F4;
+    color: var(--primary-color);
 }
 
 .tab-menu ul > li {
-    border: 1px solid #E2E2E6;
+    border: 1px solid var(--secondary-text-color);
     border-left: none;
 }
 
 .tab-menu ul > li:last-child {
-    border-left: 1px solid #E2E2E6;
+    border-left: 1px solid var(--secondary-text-color);
 }
 
 .sub-menu ul > li{
@@ -495,7 +507,7 @@ table {
 }
 
 .sub-menu ul > li > a:hover {
-    color: dodgerblue;
+    color: var(--primary-color);
     transition: 0.2s ease-in-out
 }
 
@@ -513,7 +525,7 @@ table {
 .footer-column h2 {
     font-size: 18px;
     padding: 1em 0;
-    color: dodgerblue;
+    color: var(--primary-color);
 }
 
 .footer-column ul > li > a {
@@ -523,7 +535,7 @@ table {
 }
 
 .footer-column ul > li > a:hover {
-    color: dodgerblue;
+    color: var(--primary-color);
 }
 
 .footer-column input{
@@ -564,8 +576,8 @@ table {
     margin: 1em;
     padding: 1em 2em;
     font-family: "Vazir";
-    background: #2863c2;
-    color: #FFF;
+    background: var(--primary-color);
+    color: var(--white);
     border: none;
     border-radius: 2px;
     cursor: pointer;
@@ -573,13 +585,13 @@ table {
 }
 
 .send-btn:hover {
-    background: #4285F4;
+    background: var(--primary-color);
     transition: 0.2s ease-in-out;
 }
 
 .side-ad {
     margin: 0.5em 0;
-    background: #FFF;
+    background: var(--white);
     box-shadow: 0 1px 6px 0 rgba(0,0,0,.12), 0 1px 6px 0 rgba(0,0,0,.12);
     border-radius: 30px 30px 30px 0;
     transition: 0.25s ease-in-out;
@@ -591,7 +603,7 @@ table {
 }
 
 .side-ad:hover{
-    background: #E2E2E6;
+    background: var(--secondary-text-color);
     transition: 0.25s ease-in-out;
 }
 
@@ -600,8 +612,8 @@ table {
     justify-content: center;
     align-items: center;
     padding: 2em 0;
-    background: #494D61;
-    color: #FFF;
+    background: var(--secondary-color);
+    color: var(--white);
 }
 
 #sub-menu-2, #sub-menu-3, #sub-menu-4 {
@@ -612,7 +624,7 @@ table {
 
 .gotop {
     position: absolute;
-    color: #fff;
+    color: var(--white);
     bottom: 2.5%;
     right: 5%;
     padding: 1rem;
