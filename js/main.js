@@ -55,3 +55,15 @@ const go_top_btn = document.querySelector(".gotop");
 go_top_btn.addEventListener("click", () => {
     window.scrollTo({top: 0, behavior: "smooth"});
 })
+
+const search_btn = document.querySelector(".search > div");
+const search_modal = document.querySelector("#search-modal");
+
+search_btn.addEventListener("click", () => {
+    search_modal.style.display = "block";
+});
+
+search_modal.addEventListener("click", (e) => {
+    if (e.target.id == "search-modal")
+        search_modal.style.display = "none";
+});

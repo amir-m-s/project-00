@@ -182,16 +182,49 @@ table {
     border-right: 1px solid #F1F3F4;
 }
 
-.search a {
-    transition: 0.2s ease-in-out;
+#search-modal {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #222;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    text-align: center;
+    padding: 20%;
 }
 
-.search a:hover {
+.searhbar {
+    background: red;
+    z-index: 100;
+    opacity: 1;
+}
+
+.searchbar input, .searchbar button {
+    padding: 0.5rem 1rem;
+    font-family: inherit;
+}
+
+.searchbar input {
+    width: 70%;
+}
+
+.searchbar button {
+    cursor: pointer;
+}
+
+.search > div {
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.search > div:hover {
     color: dodgerblue;
     transition: 0.2s ease-in-out;
 }
 
-.search a > div {
+.search > div > div {
     color: #333339 !important;
 }
 
