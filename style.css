@@ -195,6 +195,15 @@ table {
     padding: 20%;
 }
 
+#search-modal-close-btn {
+    position: absolute;
+    color: #fff;
+    cursor: pointer;
+    font-size: 3rem;
+    top: 5%;
+    right: 5%;
+}
+
 .searhbar {
     background: red;
     z-index: 100;

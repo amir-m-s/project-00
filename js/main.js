@@ -58,6 +58,7 @@ go_top_btn.addEventListener("click", () => {
 
 const search_btn = document.querySelector(".search > div");
 const search_modal = document.querySelector("#search-modal");
+const search_modal_close = document.querySelector("#search-modal-close-btn");
 
 search_btn.addEventListener("click", () => {
     search_modal.style.display = "block";
@@ -66,4 +67,8 @@ search_btn.addEventListener("click", () => {
 search_modal.addEventListener("click", (e) => {
     if (e.target.id == "search-modal")
         search_modal.style.display = "none";
+});
+
+search_modal_close.addEventListener("click", () => {
+    search_modal.style.display = "none";
 });
