@@ -204,6 +204,19 @@ table {
 .searchbar input, .searchbar button {
     padding: 0.5rem 1rem;
     font-family: inherit;
+    font-size: 1.2rem;
+    border-radius: 0.3rem;
+}
+
+.searchbar button {
+    background: #494D61;
+    color: #fff;
+    border: 1px solid #494D61;
+    transition: all 0.3s ease-in-out;
+}
+
+.searchbar button:hover {
+    background: hsl(230, 14%, 43%);
 }
 
 .searchbar input {
